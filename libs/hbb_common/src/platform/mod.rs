@@ -55,7 +55,7 @@ extern "C" fn breakdown_signal_handler(sig: i32) {
     if !info.is_empty() {
         #[cfg(target_os = "linux")]
         linux::system_message(
-            "RustDesk",
+            "QuickCtrlr",
             &format!("Got signal {} and exit.{}", sig, info),
             true,
         )
